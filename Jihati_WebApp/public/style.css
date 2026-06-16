@@ -1,0 +1,31 @@
+:root {
+    --blue: #2563EB;
+    --purple: #7C3AED;
+    --dark: #1E293B;
+    --bg: #F8FAFC;
+    --white: #FFFFFF;
+    --gradient: linear-gradient(135deg, var(--blue), var(--purple));
+}
+
+* { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { background-color: var(--bg); margin: 0; padding: 0; direction: rtl; color: var(--dark); }
+
+.auth-container { max-width: 400px; margin: 100px auto; background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+.auth-container h2 { text-align: center; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #CBD5E1; border-radius: 8px; outline: none; }
+input:focus { border-color: var(--purple); }
+.btn-primary { width: 100%; padding: 12px; background: var(--gradient); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
+
+/* Dashboard Styles */
+.navbar { background: var(--gradient); padding: 15px 5%; display: flex; justify-content: space-between; color: white; align-items: center;}
+.dashboard-content { padding: 40px 5%; max-width: 1200px; margin: auto; }
+.action-buttons { display: flex; gap: 15px; margin-bottom: 30px; }
+.btn-outline { padding: 12px 20px; border: 2px solid var(--blue); color: var(--blue); background: transparent; border-radius: 8px; font-weight: bold; cursor: pointer; }
+.btn-excel { background: #10B981; color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: bold;}
+
+.report-table { width: 100%; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-collapse: collapse; }
+.report-table th, .report-table td { padding: 15px; text-align: right; border-bottom: 1px solid #E2E8F0; }
+.report-table th { background: var(--blue); color: white; }
+.status-badge { padding: 5px 10px; border-radius: 20px; font-size: 12px; background: #FEF3C7; color: #D97706; }
